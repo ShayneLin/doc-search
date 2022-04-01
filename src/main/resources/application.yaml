@@ -1,0 +1,24 @@
+spring:
+  elasticsearch:
+    username: elastic
+    password: 123456
+
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:file:./db/doc_index_db
+      driver-class-name: org.h2.Driver
+      username: root
+      password: 123456
+      connection-test-query: select 1 from dual
+  h2:
+    console:
+      enabled: true
+      path: /h2-consle
+      settings:
+        web-allow-others: true
+
+  sql:
+    init:
+#      data-locations: file:db/data-h2.sql
+      schema-locations: file:db/schema-h2.sql
+      mode: never

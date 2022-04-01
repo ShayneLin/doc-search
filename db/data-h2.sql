@@ -1,0 +1,1 @@
+INSERT INTO t_document VALUES (1, '1234567890', '初始化', 'http://127.0.0.1', now( ), '描述一下' );
